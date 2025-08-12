@@ -576,7 +576,7 @@ export default function CircuitBoard() {
   body { background: var(--bg); color: var(--text); }
 `}</style>
 
-      <div style={{ display: "grid", gridTemplateColumns: "320px 1fr", gap: 16, height: "90vh" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "320px 1fr", gap: 16, height: "92vh" }}>
         {/* 왼쪽 패널 */}
         <aside
           style={{

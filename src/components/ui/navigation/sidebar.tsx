@@ -17,8 +17,8 @@ import {
 import { UserProfileDesktop, UserProfileMobile } from "./UserProfile"
 
 const navigation = [
-  { name: "Overview", href: siteConfig.baseLinks.overview, icon: RiHome2Line },
-  { name: "Details", href: siteConfig.baseLinks.details, icon: RiListCheck },
+  { name: "실시간 현황", href: siteConfig.baseLinks.overview, icon: RiHome2Line },
+  { name: "회로검사", href: siteConfig.baseLinks.details, icon: RiListCheck },
   {
     name: "Settings",
     href: siteConfig.baseLinks.settings,
@@ -28,25 +28,25 @@ const navigation = [
 
 const shortcuts = [
   {
-    name: "Add new user",
+    name: "hi",
     href: "#",
     icon: RiLinkM,
   },
-  {
-    name: "Workspace usage",
-    href: "#",
-    icon: RiLinkM,
-  },
-  {
-    name: "Cost spend control",
-    href: "#",
-    icon: RiLinkM,
-  },
-  {
-    name: "Overview – Rows written",
-    href: "#",
-    icon: RiLinkM,
-  },
+  // {
+  //   name: "Workspace usage",
+  //   href: "#",
+  //   icon: RiLinkM,
+  // },
+  // {
+  //   name: "Cost spend control",
+  //   href: "#",
+  //   icon: RiLinkM,
+  // },
+  // {
+  //   name: "Overview – Rows written",
+  //   href: "#",
+  //   icon: RiLinkM,
+  // },
 ] as const
 
 export function Sidebar() {

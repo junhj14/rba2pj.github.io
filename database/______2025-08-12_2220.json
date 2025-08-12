@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "id": "Pcbb4ab28",
+      "refName": "S1",
+      "type": "switch",
+      "x": 360,
+      "y": 380,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -105,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 105,
+          "dy": 0
+        }
+      ],
+      "w": 300,
+      "h": 300,
+      "rot": 0
+    }
+  ],
+  "conns": []
+}

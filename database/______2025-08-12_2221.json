@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "id": "P26deeb6f",
+      "refName": "C1",
+      "type": "capacitor",
+      "x": 1340,
+      "y": 620,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -36,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 36,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 100,
+      "rot": 0
+    },
+    {
+      "id": "Pac7a7ed0",
+      "refName": "R1",
+      "type": "resistor",
+      "x": 420,
+      "y": 320,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -60,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 60,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 100,
+      "rot": 0
+    }
+  ],
+  "conns": [
+    {
+      "id": "C1712b1b3",
+      "a": {
+        "partId": "Pac7a7ed0",
+        "portKey": "B"
+      },
+      "b": {
+        "partId": "P26deeb6f",
+        "portKey": "A"
+      }
+    }
+  ]
+}
