@@ -1,0 +1,462 @@
+{
+  "timestamp": "20250813_165757",
+  "spec_raw": {
+    "schema": "v1",
+    "components": [
+      {
+        "ref": "C1",
+        "type": "capacitor"
+      },
+      {
+        "ref": "R1",
+        "type": "resistor"
+      },
+      {
+        "ref": "S1",
+        "type": "switch"
+      },
+      {
+        "ref": "LED1",
+        "type": "led"
+      },
+      {
+        "ref": "Q1",
+        "type": "transistor"
+      }
+    ],
+    "edges": [
+      [
+        "C1",
+        "LED1"
+      ],
+      [
+        "C1",
+        "R1"
+      ],
+      [
+        "LED1",
+        "Q1"
+      ],
+      [
+        "Q1",
+        "R1"
+      ],
+      [
+        "R1",
+        "S1"
+      ],
+      [
+        "S1",
+        "Q1"
+      ]
+    ]
+  },
+  "detected_components": [
+    {
+      "ref": "LED1",
+      "type": "led",
+      "bbox": [
+        618,
+        358,
+        647,
+        385
+      ]
+    },
+    {
+      "ref": "SWITCH1",
+      "type": "switch",
+      "bbox": [
+        676,
+        622,
+        710,
+        655
+      ]
+    },
+    {
+      "ref": "TRANSISTOR1",
+      "type": "transistor",
+      "bbox": [
+        603,
+        500,
+        631,
+        523
+      ]
+    },
+    {
+      "ref": "CAPACITOR1",
+      "type": "capacitor",
+      "bbox": [
+        724,
+        361,
+        750,
+        384
+      ]
+    },
+    {
+      "ref": "RESISTOR1",
+      "type": "resistor",
+      "bbox": [
+        725,
+        486,
+        740,
+        528
+      ]
+    }
+  ],
+  "detected_cables": [
+    {
+      "ref": "CAB1",
+      "ends": [
+        [
+          728,
+          631
+        ],
+        [
+          729,
+          526
+        ]
+      ],
+      "bbox": [
+        721,
+        526,
+        738,
+        632
+      ]
+    },
+    {
+      "ref": "CAB2",
+      "ends": [
+        [
+          742,
+          478
+        ],
+        [
+          742,
+          380
+        ]
+      ],
+      "bbox": [
+        737,
+        380,
+        750,
+        479
+      ]
+    },
+    {
+      "ref": "CAB3",
+      "ends": [
+        [
+          627,
+          388
+        ],
+        [
+          628,
+          487
+        ]
+      ],
+      "bbox": [
+        619,
+        388,
+        637,
+        489
+      ]
+    },
+    {
+      "ref": "CAB4",
+      "ends": [
+        [
+          643,
+          519
+        ],
+        [
+          720,
+          520
+        ]
+      ],
+      "bbox": [
+        643,
+        514,
+        721,
+        527
+      ]
+    },
+    {
+      "ref": "CAB5",
+      "ends": [
+        [
+          606,
+          619
+        ],
+        [
+          674,
+          618
+        ]
+      ],
+      "bbox": [
+        606,
+        613,
+        675,
+        626
+      ]
+    },
+    {
+      "ref": "CAB6",
+      "ends": [
+        [
+          644,
+          366
+        ],
+        [
+          719,
+          366
+        ]
+      ],
+      "bbox": [
+        644,
+        362,
+        720,
+        373
+      ]
+    },
+    {
+      "ref": "CAB7",
+      "ends": [
+        [
+          523,
+          528
+        ],
+        [
+          624,
+          529
+        ]
+      ],
+      "bbox": [
+        523,
+        522,
+        625,
+        537
+      ]
+    }
+  ],
+  "mapping_det2spec": {
+    "CAPACITOR1": "C1",
+    "RESISTOR1": "R1",
+    "SWITCH1": "S1",
+    "LED1": "LED1",
+    "TRANSISTOR1": "Q1"
+  },
+  "measured_edges_spec": [
+    [
+      "C1",
+      "LED1"
+    ],
+    [
+      "C1",
+      "R1"
+    ],
+    [
+      "LED1",
+      "Q1"
+    ],
+    [
+      "Q1",
+      "R1"
+    ],
+    [
+      "R1",
+      "S1"
+    ]
+  ],
+  "compare": {
+    "verdict": "FAIL",
+    "ok": [
+      [
+        "C1",
+        "LED1"
+      ],
+      [
+        "C1",
+        "R1"
+      ],
+      [
+        "LED1",
+        "Q1"
+      ],
+      [
+        "Q1",
+        "R1"
+      ],
+      [
+        "R1",
+        "S1"
+      ]
+    ],
+    "missing": [
+      [
+        "Q1",
+        "S1"
+      ]
+    ],
+    "extra": []
+  },
+  "cable_attach_debug": [
+    {
+      "cable": "CAB1",
+      "A": {
+        "pt": [
+          728,
+          631
+        ],
+        "to_ref": "SWITCH1",
+        "pin": null,
+        "dist": 18.0
+      },
+      "B": {
+        "pt": [
+          729,
+          526
+        ],
+        "to_ref": "RESISTOR1",
+        "pin": 1,
+        "dist": 3.61
+      },
+      "issues": []
+    },
+    {
+      "cable": "CAB2",
+      "A": {
+        "pt": [
+          742,
+          478
+        ],
+        "to_ref": "RESISTOR1",
+        "pin": 0,
+        "dist": 12.81
+      },
+      "B": {
+        "pt": [
+          742,
+          380
+        ],
+        "to_ref": "CAPACITOR1",
+        "pin": 1,
+        "dist": 11.31
+      },
+      "issues": []
+    },
+    {
+      "cable": "CAB3",
+      "A": {
+        "pt": [
+          627,
+          388
+        ],
+        "to_ref": "LED1",
+        "pin": null,
+        "dist": 3.0
+      },
+      "B": {
+        "pt": [
+          628,
+          487
+        ],
+        "to_ref": "TRANSISTOR1",
+        "pin": null,
+        "dist": 13.0
+      },
+      "issues": []
+    },
+    {
+      "cable": "CAB4",
+      "A": {
+        "pt": [
+          643,
+          519
+        ],
+        "to_ref": "TRANSISTOR1",
+        "pin": 1,
+        "dist": 14.42
+      },
+      "B": {
+        "pt": [
+          720,
+          520
+        ],
+        "to_ref": "RESISTOR1",
+        "pin": 1,
+        "dist": 14.42
+      },
+      "issues": []
+    },
+    {
+      "cable": "CAB5",
+      "A": {
+        "pt": [
+          606,
+          619
+        ],
+        "to_ref": "SWITCH1",
+        "pin": null,
+        "dist": 70.06
+      },
+      "B": {
+        "pt": [
+          674,
+          618
+        ],
+        "to_ref": "SWITCH1",
+        "pin": null,
+        "dist": 4.47
+      },
+      "issues": [
+        "WRONG_SAME_COMPONENT"
+      ]
+    },
+    {
+      "cable": "CAB6",
+      "A": {
+        "pt": [
+          644,
+          366
+        ],
+        "to_ref": "LED1",
+        "pin": 1,
+        "dist": 5.83
+      },
+      "B": {
+        "pt": [
+          719,
+          366
+        ],
+        "to_ref": "CAPACITOR1",
+        "pin": 0,
+        "dist": 7.81
+      },
+      "issues": []
+    },
+    {
+      "cable": "CAB7",
+      "A": {
+        "pt": [
+          523,
+          528
+        ],
+        "to_ref": "TRANSISTOR1",
+        "pin": null,
+        "dist": 80.16
+      },
+      "B": {
+        "pt": [
+          624,
+          529
+        ],
+        "to_ref": "TRANSISTOR1",
+        "pin": null,
+        "dist": 6.0
+      },
+      "issues": [
+        "WRONG_SAME_COMPONENT"
+      ]
+    }
+  ]
+}

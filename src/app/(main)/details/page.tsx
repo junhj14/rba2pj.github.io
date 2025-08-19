@@ -328,7 +328,7 @@ export default function CircuitBoard() {
     setSaveList(list);
   }
   function handleSaveClick() {
-    const name = prompt("이 저장의 이름을 입력하세요:", "내 회로");
+    const name = prompt("이 저장의 이름을 입력하세요:", "name");
     if (!name) return;
     saveBoardToServer(name.trim()).catch((e:any)=>alert(e?.message ?? "저장 중 오류"));
   }
@@ -468,7 +468,8 @@ export default function CircuitBoard() {
   // MQTT publish
   function publishData() {
     const payload = {
-      parts: refList,
+      checkboard : 1,
+      components: refList,
       edges: edgesList.map(([ar, _at, br, _bt]) => [ar, br]),
     };
     mqttClientRef.current.publish("check", JSON.stringify(payload));

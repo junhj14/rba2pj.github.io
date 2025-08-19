@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "generate": "node src/data/generateData.js"
+    "deploy": "gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "@internationalized/date": "^3.7.0",
@@ -37,8 +35,10 @@
     "@types/node": "^22.13.14",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
+    "cross-env": "^10.0.0",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.23",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",

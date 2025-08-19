@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "id": "P44f2f35a",
+      "refName": "R1",
+      "type": "resistor",
+      "x": 500,
+      "y": 120,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -60,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 60,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 100,
+      "rot": 0
+    }
+  ],
+  "conns": []
+}

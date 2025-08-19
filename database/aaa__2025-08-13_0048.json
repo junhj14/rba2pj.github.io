@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "id": "P47ef30a6",
+      "refName": "R1",
+      "type": "resistor",
+      "x": 700,
+      "y": 180,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -60,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 60,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 100,
+      "rot": 0
+    }
+  ],
+  "conns": []
+}

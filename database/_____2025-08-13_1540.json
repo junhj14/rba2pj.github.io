@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "id": "P5e4129ad",
+      "refName": "C1",
+      "type": "capacitor",
+      "x": 380,
+      "y": 140,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -36,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 36,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 100,
+      "rot": 90
+    },
+    {
+      "id": "Pb18c5886",
+      "refName": "R1",
+      "type": "resistor",
+      "x": 800,
+      "y": 120,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -60,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 60,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 100,
+      "rot": 0
+    },
+    {
+      "id": "Pf821a7ed",
+      "refName": "S1",
+      "type": "switch",
+      "x": 1240,
+      "y": 220,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -105,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 105,
+          "dy": 0
+        }
+      ],
+      "w": 300,
+      "h": 300,
+      "rot": 90
+    },
+    {
+      "id": "Pd06ae0b5",
+      "refName": "LED1",
+      "type": "led",
+      "x": 420,
+      "y": 620,
+      "ports": [
+        {
+          "key": "A",
+          "dx": -44,
+          "dy": 0
+        },
+        {
+          "key": "B",
+          "dx": 44,
+          "dy": 0
+        }
+      ],
+      "w": 200,
+      "h": 200,
+      "rot": 0
+    },
+    {
+      "id": "P60414f3f",
+      "refName": "Q1",
+      "type": "transistor",
+      "x": 860,
+      "y": 540,
+      "ports": [
+        {
+          "key": "B",
+          "dx": 0,
+          "dy": -75
+        },
+        {
+          "key": "C",
+          "dx": -57,
+          "dy": 75
+        },
+        {
+          "key": "E",
+          "dx": 57,
+          "dy": 75
+        }
+      ],
+      "w": 300,
+      "h": 300,
+      "rot": 0
+    }
+  ],
+  "conns": [
+    {
+      "id": "C51094f60",
+      "a": {
+        "partId": "P5e4129ad",
+        "portKey": "B"
+      },
+      "b": {
+        "partId": "Pd06ae0b5",
+        "portKey": "A"
+      }
+    },
+    {
+      "id": "C82a0b4cb",
+      "a": {
+        "partId": "P5e4129ad",
+        "portKey": "A"
+      },
+      "b": {
+        "partId": "Pb18c5886",
+        "portKey": "A"
+      }
+    },
+    {
+      "id": "Cc8a019d0",
+      "a": {
+        "partId": "Pd06ae0b5",
+        "portKey": "B"
+      },
+      "b": {
+        "partId": "P60414f3f",
+        "portKey": "C"
+      }
+    },
+    {
+      "id": "Cef859b08",
+      "a": {
+        "partId": "P60414f3f",
+        "portKey": "B"
+      },
+      "b": {
+        "partId": "Pb18c5886",
+        "portKey": "B"
+      }
+    },
+    {
+      "id": "Ca568fdd1",
+      "a": {
+        "partId": "Pb18c5886",
+        "portKey": "B"
+      },
+      "b": {
+        "partId": "Pf821a7ed",
+        "portKey": "A"
+      }
+    },
+    {
+      "id": "Cadde0b6e",
+      "a": {
+        "partId": "Pf821a7ed",
+        "portKey": "B"
+      },
+      "b": {
+        "partId": "P60414f3f",
+        "portKey": "E"
+      }
+    }
+  ]
+}
